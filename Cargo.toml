@@ -1,0 +1,12 @@
+[package]
+name = "jwt-transactions-cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.0", features = ["derive"] }  # For CLI argument parsing
+jsonwebtoken = "8.2"                                # For handling JWT encoding/decoding
+serde = { version = "1.0", features = ["derive"] }  # For serializing/deserializing claims
+chrono = "0.4"                                      # For handling expiration timestamps
+serde_json = "1.0"  # Pretty-print JSON
+colored = "2.1"  # Add colors to the terminal output
