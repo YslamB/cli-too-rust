@@ -15,7 +15,7 @@ struct Cli {
 
 #[derive(Debug, Subcommand)]
 enum Commands {
-    /// Encode a new JWT token. for example: encode --object "John Doe" --secret "secret"
+    /// Encode a new JWT token.
     Encode {
         /// Object or identifier for the token.
         #[arg(short, long)]
@@ -25,7 +25,7 @@ enum Commands {
         #[arg(short, long)]
         secret: String,
     },
-    /// Decode and verify an existing JWT token. for example: decode --token "<token>" --secret "secret"
+    /// Decode and verify an existing JWT token.
     Decode {
         /// The JWT token string.
         #[arg(short, long)]
